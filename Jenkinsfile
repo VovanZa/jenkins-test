@@ -1,16 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('testing pipeline') {
+    stage('Building Code') {
       steps {
-        echo 'test1'
-        sh 'mkdir from-jenkins'
-        sh 'touch from-jenkins/test.txt'
-      }
-    }
-    stage('Build') {
-      steps {
-        echo 'Jenkins Minute Pipeline'
+        build '1111'
       }
     }
   }
